@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>tern.io</title>
+</head>
+<body>
+<p id="hour" align=right>
+</p>
+<h1 align=center>
+Tern
+</h1>
+<p id="greeting">
+</p>
+<p>
+Text
+</p>
+<script>
+var hour = new Date().getHours();
+var minute = new Date().getMinutes();
+var second = new Date().getSeconds();
+var greeting;
+if (hour < 12) {greeting = "Good morning";} 
+else if (hour < 17) {greeting = "Good afternoon";}
+else {greeting ="Good night";}
+document.getElementById("greeting").innerHTML=greeting;
+document.getElementById("hour").innerHTML=hour;
+</script>
+</body>
+</html>
